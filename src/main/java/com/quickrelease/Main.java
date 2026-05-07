@@ -24,17 +24,15 @@ public class Main {
      * @param args command-line arguments
      */
     public static void main(String[] args) {
+         DatabaseManager databaseManager = new DatabaseManager();
+        databaseManager.initializeDatabase();
+
 
         System.out.println("=================================");
         System.out.println("      QUICK RELEASE");
         System.out.println(" Bowling League/Tournament Management App");
         System.out.println("=================================");
 
-        // Initialize database
-        DatabaseManager databaseManager = new DatabaseManager();
-        databaseManager.initializeDatabase();
-
-        // Start application UI
         ConsoleUI ui = new ConsoleUI();
         ui.start();
     }
