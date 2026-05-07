@@ -67,4 +67,3 @@ Leagues and tournaments are sorted by oil pattern ratio:
 
 ---
 
-## Project Structure
